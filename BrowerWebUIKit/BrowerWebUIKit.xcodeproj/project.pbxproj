@@ -13,6 +13,7 @@
 		F31B308A260CB01000FD9BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31B3088260CB01000FD9BFC /* Main.storyboard */; };
 		F31B308C260CB01100FD9BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31B308B260CB01100FD9BFC /* Assets.xcassets */; };
 		F31B308F260CB01100FD9BFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31B308D260CB01100FD9BFC /* LaunchScreen.storyboard */; };
+		F322FBF7261639F600A90229 /* TabItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322FBF6261639F600A90229 /* TabItemModel.swift */; };
 		F3BD8A21260E37C100B4CABB /* BrowserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD8A20260E37C100B4CABB /* BrowserCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		F31B308B260CB01100FD9BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F31B308E260CB01100FD9BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F31B3090260CB01100FD9BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F322FBF6261639F600A90229 /* TabItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemModel.swift; sourceTree = "<group>"; };
 		F3BD8A20260E37C100B4CABB /* BrowserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				F31B3082260CB01000FD9BFC /* AppDelegate.swift */,
 				F31B3084260CB01000FD9BFC /* SceneDelegate.swift */,
 				F31B3086260CB01000FD9BFC /* BrowserViewcontroller.swift */,
+				F322FBF6261639F600A90229 /* TabItemModel.swift */,
 				F3BD8A20260E37C100B4CABB /* BrowserCollectionViewCell.swift */,
 				F31B3088260CB01000FD9BFC /* Main.storyboard */,
 				F31B308B260CB01100FD9BFC /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				F31B3083260CB01000FD9BFC /* AppDelegate.swift in Sources */,
 				F3BD8A21260E37C100B4CABB /* BrowserCollectionViewCell.swift in Sources */,
 				F31B3085260CB01000FD9BFC /* SceneDelegate.swift in Sources */,
+				F322FBF7261639F600A90229 /* TabItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

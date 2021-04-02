@@ -18,6 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrW-vp-VHW">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AF-EN-gWY">
                                 <rect key="frame" x="187" y="822" width="40" height="40"/>
                                 <constraints>
@@ -196,20 +204,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vIA-Ep-P8d" firstAttribute="top" secondItem="qGg-Hp-sc8" secondAttribute="bottom" id="0HM-rT-c0n"/>
+                            <constraint firstItem="QrW-vp-VHW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="38i-yp-KvV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QrW-vp-VHW" secondAttribute="trailing" id="8lJ-04-kNX"/>
                             <constraint firstItem="9AF-EN-gWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HeX-VE-jZO"/>
                             <constraint firstItem="vIA-Ep-P8d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JG8-YG-r2Z"/>
                             <constraint firstItem="qGg-Hp-sc8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ksl-yF-e6m"/>
                             <constraint firstItem="qGg-Hp-sc8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="M4t-nY-tM4"/>
                             <constraint firstItem="qGg-Hp-sc8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QCU-Xk-D7e"/>
                             <constraint firstItem="9AF-EN-gWY" firstAttribute="top" secondItem="vIA-Ep-P8d" secondAttribute="bottom" id="ZX8-iL-18x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QrW-vp-VHW" secondAttribute="bottom" id="avY-fC-piH"/>
                             <constraint firstAttribute="bottom" secondItem="9AF-EN-gWY" secondAttribute="bottom" constant="34" id="fgq-7E-HcZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vIA-Ep-P8d" secondAttribute="trailing" id="ui0-jB-Eha"/>
+                            <constraint firstItem="QrW-vp-VHW" firstAttribute="top" secondItem="qGg-Hp-sc8" secondAttribute="bottom" id="yfJ-Ch-owk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addBtnBottomConstraint" destination="fgq-7E-HcZ" id="TrH-eA-HTC"/>
                         <outlet property="backButton" destination="G7J-8I-oIW" id="Msv-nR-hf9"/>
                         <outlet property="browserCollectionView" destination="vIA-Ep-P8d" id="JSN-A7-dqL"/>
+                        <outlet property="browserWebView" destination="QrW-vp-VHW" id="yc9-R5-ZkG"/>
                         <outlet property="fwdButton" destination="p78-gQ-Klr" id="Tl9-eJ-5j2"/>
                         <outlet property="refreshButton" destination="Dot-ST-SxV" id="cRJ-zs-EHg"/>
                         <outlet property="searchTextField" destination="6fb-Xu-sQ8" id="nwW-DA-J7D"/>

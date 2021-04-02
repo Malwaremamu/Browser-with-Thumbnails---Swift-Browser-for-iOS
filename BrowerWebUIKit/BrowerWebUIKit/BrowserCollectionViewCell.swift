@@ -28,14 +28,35 @@ class BrowserCollectionViewCell: UICollectionViewCell {
     weak var delegate: BrowseCollectionDelegate?
     // MARK: - Custom Methods
 
-    func loadURLOnWebView(_ url: String) {
-        let url = URL(string: url)!
+    func loadURLOnWebView(tabItem: TabItemModel) {
+        let url = URL(string: tabItem.currentUrl)!
         thumbnailWebView.load(URLRequest(url: url))
         thumbnailWebView.allowsBackForwardNavigationGestures = true
+        thumbnailLabel.text = url.host
     }
     @IBAction func trashButtonTapped(_ sender: Any) {
         self.delegate?.closeButnTapped(deleteButton.tag)
        
     }
+}
+extension BrowserCollectionViewCell: WKNavigationDelegate {
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        // setting hieght of view according ot content height of the webview
+        webView.scrollView.isScrollEnabled = true
+        var frame = webView.frame
+        frame.size.height = 1
+        webView.frame = frame
+        frame.size.height = webView.scrollView.contentSize.height
+        webView.frame = frame
+    }
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        decisionHandler(.allow)
+
+    }
+    
+    
 }
 
