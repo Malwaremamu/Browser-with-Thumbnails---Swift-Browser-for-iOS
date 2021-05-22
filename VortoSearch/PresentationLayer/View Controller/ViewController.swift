@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtFldSearch: UITextField!
     @IBOutlet weak var tbleViewSerach: UITableView!
     let headers: HTTPHeaders = [
-       "Authorization": "Bearer OqnIJswy0tkVaoFKE8BoLJGaJcEHWI7_ssyIyrbegU8On37xw92kWPDfwaMaoIrpY7_HYxaYn_wri1fXFGaKvyf9NZVdZ_UNASYUmuvDC6iMY7gH-UX3SOP6286lYHYx",
+       "Authorization": "Bearer ",
         "Accept": "application/json"
     ]
     var results = [SearchBO]()
